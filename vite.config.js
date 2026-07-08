@@ -9,22 +9,6 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] })
   ],
   base:"/designer/",
-  build: {
-    rolldownOptions: {
-      output: {
-        codeSplitting: {
-          groups: [
-            {
-              name: 'model-viewer',
-              test: /node_modules\/@google\/model-viewer/,
-            },
-            {
-              name: 'vendor',
-              test: /node_modules/,
-            }
-          ]
-        }
-      }
-    }
-  }
+  
+  
 })
